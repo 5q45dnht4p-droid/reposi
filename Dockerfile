@@ -18,5 +18,5 @@ RUN chmod 777 /app
 # Expor porta (Render usa variável $PORT)
 EXPOSE 8080
 
-# Iniciar servidor PHP
-CMD php -S 0.0.0.0:${PORT:-8080} api_proxy.php
+# Iniciar servidor PHP com router
+CMD php -S 0.0.0.0:${PORT:-8080} router.php
